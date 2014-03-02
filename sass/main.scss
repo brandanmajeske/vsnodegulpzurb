@@ -1,0 +1,46 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+@import "normalize.css";
+@import "foundation.css";
+
+$bp: #8a2be2;
+$wt: #ffffff;
+$blk: #000000;
+$ylw: #F3F315;
+
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+	color: darken($bp, 10%);
+}
+
+h2,h3,h4 {
+	color: darken($bp, 20%);
+}
+
+a {color: darken($bp, 10%); 
+	&:hover{
+	color: darken($bp, 20%);
+	}
+}
+.gulpicon {
+	margin: 1em auto;
+}
+
+.button {
+	background-color: $bp;
+
+	&:hover {
+		background-color: darken($bp, 20%);
+	}
+}
+
+hr { 
+	border: solid lighten($bp,35%); 
+	border-width: 1px 0 0; 
+}
+
+.panel {
+	background-color: lighten($bp, 40%); 
+	border-color: lighten($bp,35%);
+}
